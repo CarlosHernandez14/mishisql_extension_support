@@ -11,8 +11,6 @@ MiShiSQL es una extensión para Visual Studio Code que ofrece resaltado de sinta
 
 Puedes ver MiShiSQL en acción en la siguiente demostración:
 
-![Vista de MiShiSQL en acción](images/mishisql-demo.gif)
-
 ## Requisitos
 
 - **Visual Studio Code:** Se recomienda tener la última versión instalada.

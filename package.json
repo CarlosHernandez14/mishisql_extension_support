@@ -9,6 +9,11 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlosHernandez14/mishisql_extension_support.git"
+  },
+  "license": "MIT",
   "contributes": {
     "languages": [{
       "id": "mishisql",
