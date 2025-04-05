@@ -18,8 +18,8 @@
 	  },
 	  "strings": {
 		"name": "string.quoted.double.mishisql",
-		"begin": "\"",
-		"end": "\"",
+		"begin": "'",
+		"end": "'",
 		"patterns": [
 		  {
 			"name": "constant.character.escape.mishisql",
