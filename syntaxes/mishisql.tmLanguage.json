@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mishisql",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.mishisql",
+				"match": "\\b(SELECT|FROM|WHERE|JOIN|INSERT|UPDATE|DELETE)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.mishisql",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mishisql",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.mishisql"
+}

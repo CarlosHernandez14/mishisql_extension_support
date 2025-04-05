@@ -1,0 +1,25 @@
+{
+  "name": "mishisqlsupport",
+  "displayName": "MishiSqlSupport",
+  "description": "MishiSQL Support for Vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mishisql",
+      "aliases": ["mishisql", "mishisql"],
+      "extensions": [".mishisql"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mishisql",
+      "scopeName": "source.mishisql",
+      "path": "./syntaxes/mishisql.tmLanguage.json"
+    }]
+  }
+}
