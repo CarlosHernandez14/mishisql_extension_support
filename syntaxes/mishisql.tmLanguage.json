@@ -1,32 +1,40 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "mishisql",
+	"scopeName": "source.mishisql",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+	  { "include": "#keywords" },
+	  { "include": "#strings" },
+	  { "include": "#numbers" }
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.mishisql",
-				"match": "\\b(SELECT|FROM|WHERE|JOIN|INSERT|UPDATE|DELETE)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.mishisql",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.mishisql",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.mishisql"
-}
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.mishisql",
+			"match": "\\b(?:MISHI|MUESTRAME|TODOS\\s+LOS\\s+MISHI\\s+DATOS|LOS\\s+MISHICAMPOS|EL\\s+CAMPO|DE|FILTRANDO\\s+DONDE|DONDE|CON|UNION\\s+INTERNA|UNION\\s+IZQUIERDA|UNION\\s+DERECHA|UNION\\s+COMPLETA|Y|O|NOT|IN|LIKE|IS|VACIO|ORDENAMELO|POR|ASCENDENTE|DESCENDENTE|PERO\\s+SOLO\\s+DAME|OFFSET|AGREGA\\s+A|INTO|LOS\\s+VALORES|ACTUALIZA\\s+LA|ASIGNA|ELIMINA|HAZME\\s+UNA|USA\\s+LA\\s+BD|TABLA|MODIFICA|BORRA|AGREGA|COLUMNA|PRIMARIA|IGUAL\\s+A|DIFERENTE\\s+DE|MENOR\\s+QUE|MENOR\\s+O\\s+IGUAL\\s+QUE|MAYOR\\s+QUE|MAYOR\\s+O\\s+IGUAL\\s+QUE|ESTE\\s+ENTRE)\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"name": "string.quoted.double.mishisql",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.mishisql",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  "numbers": {
+		"patterns": [
+		  {
+			"name": "constant.numeric.mishisql",
+			"match": "\\b\\d+(?:\\.\\d+)?\\b"
+		  }
+		]
+	  }
+	}
+  }
+  
